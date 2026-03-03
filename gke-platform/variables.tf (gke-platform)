@@ -1,0 +1,8 @@
+variable "project_id" {}
+variable "environment" {}
+variable "region" {
+  default = "europe-west3"
+}
+variable "network" {}
+variable "subnetwork" {}
+variable "gke_nodes_sa" {}
