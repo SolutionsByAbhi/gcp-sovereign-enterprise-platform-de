@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sovereign-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sovereign-app
+  template:
+    metadata:
+      labels:
+        app: sovereign-app
+    spec:
+      containers:
+        - name: app
+          image: europe-west3-docker.pkg.dev/project/app/app:latest
+          ports:
+            - containerPort: 8080
