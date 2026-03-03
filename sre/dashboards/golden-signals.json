@@ -1,0 +1,9 @@
+{
+  "title": "Golden Signals",
+  "panels": [
+    { "type": "graph", "title": "Latency" },
+    { "type": "graph", "title": "Traffic" },
+    { "type": "graph", "title": "Errors" },
+    { "type": "graph", "title": "Saturation" }
+  ]
+}
