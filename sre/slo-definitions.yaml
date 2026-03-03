@@ -1,0 +1,8 @@
+service: sovereign-app
+slos:
+  - name: availability
+    target: 99.9
+    window: 30d
+  - name: latency
+    target: 95
+    threshold_ms: 300
